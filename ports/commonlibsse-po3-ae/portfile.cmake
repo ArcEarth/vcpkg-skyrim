@@ -1,8 +1,8 @@
 vcpkg_from_github(
         OUT_SOURCE_PATH SOURCE_PATH
-        REPO color-glass/CommonLibSSE
-        REF f4fbc0875d7e5e76ce3f1c037bfea71d2f177941
-        SHA512 1c17a880ab38806616a4d1c7d68064d0480ce7657ebcc8e69f3e2122f0a5c368bfc2d972c1215bb619ce3e5d9d6b5521073ad4f9ecf19d95a552e57f9206f2d2
+        REPO powerof3/CommonLibSSE
+        REF 919033346b867bedf25cb31660c8c2990872b593
+        SHA512 d23cd381e81d3207fb63267190e94abb6e6bfe1f836e60476c0080d3154249755a869a35d8a5c4939beac9f6511fa9ad840a3c19e42385b3c1d9f869f0ce11e1
         HEAD_REF dev
 )
 
@@ -11,7 +11,7 @@ set(VCPKG_POLICY_EMPTY_PACKAGE enabled)
 vcpkg_configure_cmake(
         SOURCE_PATH "${SOURCE_PATH}"
         PREFER_NINJA
-        OPTIONS -DSKYRIM_SUPPORT_AE=on -DSKSE_SUPPORT_XBYAK=on
+        -DSKYRIM_SUPPORT_AE=on
 )
 
 vcpkg_install_cmake()
