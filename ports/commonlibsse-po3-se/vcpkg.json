@@ -12,11 +12,8 @@
         "name": "vcpkg-cmake-config",
         "host": true
       },
-      "boost-stl-interfaces",
-      "fmt",
       "rsm-binary-io",
-      "spdlog",
-      "xbyak"
+      "spdlog"
     ]
   }
   
